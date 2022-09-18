@@ -34,12 +34,46 @@ main > section {
 	background-color: var(--bg-primary);
 }
 
+a {
+	color: var(--text-primary);
+	transition: color 150ms ease-in;
+}
+
+a:hover {
+	color: var(--text-secondary);
+}
+
+/* Intro Section */
 .intro-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+
+.profile {
+	display: block;
+	margin: 0 auto;
+	height: 250px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+}
+
+.info {
+	margin-top: 60px;
+	text-align: center;
+	width: 40ch;
+}
+
+.info h2 {
+	font-size: 1.25rem;
+	margin-bottom: 25px;
+}
+.highlight {
+	color: var(--bg-secondary);
+}
+
+/* Skills Section */
 
 .skills-info {
 	display: grid;
@@ -56,17 +90,17 @@ section > h1::after {
 
 h1 {
 	text-align: center;
-	font-size: 60px;
+	font-size: 3rem;
 	margin-bottom: 60px;
 	padding: 10px 0;
 }
 
 p {
-	font-size: 22px;
+	font-size: 1rem;
 }
 
 li {
-	font-size: 20px;
+	font-size: 1.25rem;
 	margin-bottom: 20px;
 	display: flex;
 	gap: 10px;
@@ -77,24 +111,35 @@ ul {
 	margin-top: 20px;
 }
 
-.profile {
-	display: block;
-	margin: 0 auto;
-	height: 250px;
-	border-radius: 50%;
-	border: 3px solid #fff;
+/* Projects Section */
+
+/* Socials Section */
+
+.socials-info {
+	display: grid;
+	place-content: center;
+	margin-top: 200px;
 }
 
-.info {
-	margin-top: 60px;
-	text-align: center;
-	width: 700px;
-}
+/* Media Queries */
+@media (min-width: 480px) {
+	h1 {
+		font-size: 4rem;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+	li {
+		font-size: 1.25rem;
+	}
 
-.info h2 {
-	font-size: 32px;
-}
+	.info h2 {
+		font-size: 2rem;
+	}
 
-.highlight {
-	color: var(--bg-secondary);
+	.info {
+		margin-top: 60px;
+		text-align: center;
+		width: 60ch;
+	}
 }
