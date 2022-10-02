@@ -22,11 +22,11 @@ body {
 	color: var(--text-primary);
 }
 
-main {
+/* main {
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 	height: 100vh;
-}
+} */
 
 main > section {
 	height: 100vh;
@@ -111,6 +111,14 @@ ul {
 	margin-top: 20px;
 }
 
+i {
+	font-size: 2.5rem;
+}
+
+#contact i {
+	font-size: 3rem;
+}
+
 /* Projects Section */
 
 /* Socials Section */
@@ -142,4 +150,72 @@ ul {
 		text-align: center;
 		width: 60ch;
 	}
+}
+
+/* Navigation */
+
+nav {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 30px;
+}
+
+.dots-container {
+	display: flex;
+	align-items: center;
+}
+
+.dots-info {
+	position: absolute;
+	/* right: 15px; */
+	right: -15ch;
+	visibility: hidden;
+	opacity: 0;
+	background-color: white;
+	padding: 5px;
+	height: 136px;
+	width: 15ch;
+	border-radius: 10px;
+	transition: all 200ms ease-in;
+}
+
+.dots-info > p {
+	font-size: 1.25rem;
+	color: black;
+}
+
+.dots {
+	background-color: white;
+	padding: 5px;
+	border-radius: 10px;
+	position: relative;
+	z-index: 10;
+}
+
+.dots a {
+	display: block;
+}
+
+.dots a:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.dot {
+	height: 1.5rem;
+	width: 1.5rem;
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	transition: box-shadow 100ms ease-in;
+}
+
+.dot:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.slide {
+	right: 15px;
+	visibility: visible;
+	opacity: 1;
 }

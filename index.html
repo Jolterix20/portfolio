@@ -11,12 +11,18 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+		/>
 		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
+
 		<title>My Portfolio</title>
 	</head>
 	<body>
 		<main>
-			<section id="#intro">
+			<section id="intro">
 				<h1>Introduction</h1>
 				<div class="intro-container">
 					<figure>
@@ -40,40 +46,49 @@
 					</div>
 				</div>
 			</section>
-			<section id="#skills">
+			<section id="skills">
 				<h1>Skills</h1>
 				<div class="skills-info">
 					<p>A few of my skills:</p>
 					<ul>
-						<li>HTML <i class="fa-brands fa-html5 fa-2x"></i></li>
+						<li>
+							HTML
+							<i class="devicon-html5-plain"></i>
+						</li>
 						<li>
 							CSS/ SCSS
-							<i class="fa-brands fa-css3 fa-2x"></i>
-							<i class="fa-brands fa-sass fa-2x"></i>
+							<i class="devicon-css3-plain"></i>
+							<i class="devicon-sass-original"></i>
 						</li>
 						<li>
-							JavaScript <i class="fa-brands fa-js fa-2x"></i>
+							JavaScript
+							<i class="devicon-javascript-plain"></i>
 						</li>
 						<li>
-							Node.js <i class="fa-brands fa-node-js fa-2x"></i>
+							Node.js
+							<i class="devicon-nodejs-plain"></i>
 						</li>
 						<li>
-							ReactJS <i class="fa-brands fa-react fa-2x"></i>
+							ReactJS
+							<i class="devicon-react-original"></i>
 						</li>
-						<li>NextJS</li>
+						<li>
+							NextJS
+							<i class="devicon-nextjs-line"></i>
+						</li>
 						<li>
 							Adobe Illustrator
-							<i class="fa-solid fa-bezier-curve fa-2x"></i>
+							<i class="devicon-illustrator-line"></i>
 						</li>
 					</ul>
 					<p>And learning a few more at the moment...</p>
 				</div>
 			</section>
-			<section id="#projects">
+			<section id="projects">
 				<h1>Projects</h1>
 				<div class="projects-info"></div>
 			</section>
-			<section id="#contact">
+			<section id="contact">
 				<h1>Contact</h1>
 				<div class="socials-info">
 					<p>Ways to contact me</p>
@@ -87,7 +102,7 @@
 							>
 						</li>
 						<li>
-							<i class="fa-brands fa-linkedin fa-3x"></i>:
+							<i class="devicon-linkedin-plain"></i>:
 							<a
 								href="https://www.linkedin.com/in/jayesh-bane-27b38b196/"
 								target="_blank"
@@ -96,7 +111,7 @@
 							>
 						</li>
 						<li>
-							<i class="fa-brands fa-github fa-3x"></i>:
+							<i class="devicon-github-original"></i>:
 							<a
 								href="https://github.com/Jolterix20"
 								target="_blank"
@@ -108,5 +123,21 @@
 				</div>
 			</section>
 		</main>
+		<nav>
+			<div class="dots-container">
+				<div class="dots">
+					<a class="dot" href="#intro"></a
+					><a class="dot" href="#skills"></a
+					><a class="dot" href="#projects"></a
+					><a class="dot" href="#contact"></a>
+				</div>
+				<div class="dots-info">
+					<p>Introduction</p>
+					<p>Skills</p>
+					<p>Projects</p>
+					<p>Contact</p>
+				</div>
+			</div>
+		</nav>
 	</body>
 </html>
